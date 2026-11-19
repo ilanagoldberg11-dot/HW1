@@ -1,5 +1,10 @@
 public class Assignment01Q01 {
     public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Please provide strings as arguments.");
+            return;
+        }
+
         for (int i = 0; i < args.length; i++) {
             String character = args[i];
             if (character.length() > 0) {
